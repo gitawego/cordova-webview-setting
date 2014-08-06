@@ -1,6 +1,6 @@
 
 var exec = require('cordova/exec'),isAndroid44;
-var m = navigator.appVersion.match(/Android\s(.*?);/);
+var m = window.navigator.appVersion.match(/Android\s(.*?);/);
 if(m){
 	isAndroid44 = parseFloat(m[1]) === 4.4;
 }
