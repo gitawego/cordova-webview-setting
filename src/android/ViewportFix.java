@@ -26,6 +26,7 @@ public class ViewportFix extends CordovaPlugin {
             cordova.getActivity().runOnUiThread(new Runnable() {
                 public void run() {
                     webView.getSettings().setUseWideViewPort(true);
+                    webView.getSettings().setMediaPlaybackRequiresUserGesture(false);
                     callbackContext.success();
                 }
             });
