@@ -6,9 +6,9 @@ if(m){
 }
 module.exports = {
 	fixme:function(callback) {
-		if(!isAndroid44){
+		/* if(!isAndroid44){
 			return callback && callback(null,'ok');
-		}
+		} */
 		exec(function(res){
 			callback && callback(null,res);
 		}, function(error){
