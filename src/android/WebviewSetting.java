@@ -1,4 +1,4 @@
-package com.darktalker.cordova.viewportfix;
+package com.darktalker.cordova.webviewsetting;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CordovaWebView;
