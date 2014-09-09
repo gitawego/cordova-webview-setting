@@ -5,8 +5,8 @@
     <name>ViewportFix</name>
     <description>cordova plugin to fix viewport in android</description>
     <license>MIT</license>
-    <keywords>cordova,viewport</keywords>
-    <repo>https://github.com/gitawego/cordova-screenshot.git</repo>
+    <keywords>cordova,viewport,autoplay</keywords>
+    <repo>https://github.com/gitawego/cordova-webview-setting</repo>
     <engines>
         <engine name="cordova" version=">=3.0.0" />
     </engines>
