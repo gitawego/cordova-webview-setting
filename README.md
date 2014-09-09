@@ -1,13 +1,15 @@
-cordova-viewport-fix
+cordova-webview-setting
 ====================
+a plugin for general webview setting:
 
-cordova plugin to fix viewport issue: Viewport meta tag ignored in Android 4.4 WebView
+* to fix viewport issue: Viewport meta tag ignored in Android 4.4 WebView
+* enable autoplay for video/audio tag
 
 
 How to use
 ==============
 ```js
-window.plugin.viewportFix.fixme(function(err,status){
+window.plugin.webviewSetting.set(function(err,status){
    if(err){
      console.error('failed');
    }else{
