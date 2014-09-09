@@ -11,18 +11,18 @@ import android.util.Log;
 
 
 
-public class ViewportFix extends CordovaPlugin {
+public class WebviewSetting extends CordovaPlugin {
     private CordovaWebView webView;
     @Override
     public void initialize(final CordovaInterface cordova, CordovaWebView webView) {
-        Log.d("ViewportFix", "set viewport");
+        Log.d("WebviewSetting", "set viewport");
         this.webView = webView;
         super.initialize(cordova, webView); 
         
     }
     @Override
     public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
-        if ("fixme".equals(action)) {
+        if ("set".equals(action)) {
             cordova.getActivity().runOnUiThread(new Runnable() {
                 public void run() {
                     webView.getSettings().setLoadWithOverviewMode(true);
