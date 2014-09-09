@@ -5,7 +5,7 @@ if(m){
 	isAndroid44 = parseFloat(m[1]) === 4.4;
 }
 module.exports = {
-	fixme:function(callback) {
+	set:function(callback) {
 		/* if(!isAndroid44){
 			return callback && callback(null,'ok');
 		} */
@@ -13,6 +13,6 @@ module.exports = {
 			callback && callback(null,res);
 		}, function(error){
 			callback && callback(error);
-		}, "ViewportFix", "fixme", []);
+		}, "WebviewSetting", "set", []);
 	}
 };
